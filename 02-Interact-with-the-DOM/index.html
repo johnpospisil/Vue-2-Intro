@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hello 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>H1 Here</h1>
+        <!-- Access a variable from a Vue object. -->
+        <p>{{ title }}</p>
+        <!-- Access a function from a Vue object. -->
+        <p>{{ sayHello() }}</p>
+        <p>{{ sayGoodbye() }}</p>
+        <!-- Access a variable ffrom a Vue object and use it as a link href. -->
+        <p><a v-bind:href="link" target="_blank">Link to Google</a></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
