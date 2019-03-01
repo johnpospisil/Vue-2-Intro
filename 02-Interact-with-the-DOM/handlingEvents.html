@@ -12,7 +12,10 @@
         <!-- Listen for a click on the button, then run the 'increase' function -->
         <button v-on:click="increase(2, $event)">Click Me</button>
         <p>{{ counter }}</p>
-        <p v-on:mousemove="updateCoordinates">Coordinate: {{ x }} / {{ y }}</p>
+        <!-- Do not allow coordinates to propagate . -->
+         <!-- 'stop'coordinates from propagating while hovering over the span containing the dead spot. -->
+        <p v-on:mousemove="updateCoordinates">Coordinate: {{ x }} / {{ y }} 
+            - <span v-on:mousemove.stop="dummy">DEAD SPOT</span></p>
     </div>
     
     <script src="handlingEvents.js"></script>

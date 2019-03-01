@@ -12,6 +12,10 @@ new Vue({
         updateCoordinates: function(event) {
             this.x = event.clientX;
             this.y = event.clientY;
-        }
+        },
+        // Do not show coordinates where the 'dummy' function is used.
+        // dummy: function(event) {
+        //     event.stopPropagation();
+        // }
     }
 });
