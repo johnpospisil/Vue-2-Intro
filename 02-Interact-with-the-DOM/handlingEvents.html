@@ -10,7 +10,7 @@
 <body>
     <div id="app">
         <!-- Listen for a click on the button, then run the 'increase' function -->
-        <button v-on:click="increase">Click Me</button>
+        <button v-on:click="increase(2, $event)">Click Me</button>
         <p>{{ counter }}</p>
         <p v-on:mousemove="updateCoordinates">Coordinate: {{ x }} / {{ y }}</p>
     </div>
