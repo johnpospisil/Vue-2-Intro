@@ -16,6 +16,8 @@
          <!-- 'stop'coordinates from propagating while hovering over the span containing the dead spot. -->
         <p v-on:mousemove="updateCoordinates">Coordinate: {{ x }} / {{ y }} 
             - <span v-on:mousemove.stop="dummy">DEAD SPOT</span></p>
+        <!-- The below key modifier 'enter' specifies that the  keyup of the 'Enter' key should run the 'alertMe' function-->
+        <input type="text" v-on:keyup.enter="alertMe">
     </div>
     
     <script src="handlingEvents.js"></script>

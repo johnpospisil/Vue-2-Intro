@@ -13,6 +13,9 @@ new Vue({
             this.x = event.clientX;
             this.y = event.clientY;
         },
+        alertMe: function() {
+            alert('A keyup of the Enter key just occurred!');
+        }
         // Do not show coordinates where the 'dummy' function is used.
         // dummy: function(event) {
         //     event.stopPropagation();
