@@ -10,8 +10,12 @@
 <body>
     <div id="app">
         <!-- Listen for a click on the button, then run the 'increase' function -->
-        <button v-on:click="increase(2, $event)">Click Me</button>
-        <p>{{ counter }}</p>
+        <button v-on:click="increase(2, $event)">+2 Button</button>
+        <!-- notice that we can use javascript code in the v-on attribute -->
+        <button v-on:click="counter++">+1 Button</button>
+        <p>Counter: {{ counter }}</p>
+        <!-- Also notice the use of javascript within {{ }} below where a variable is multipled within the html file. -->
+        <p>Double Counter: {{ counter * 2 }}</p>
         <!-- Do not allow coordinates to propagate . -->
          <!-- 'stop'coordinates from propagating while hovering over the span containing the dead spot. -->
         <p v-on:mousemove="updateCoordinates">Coordinate: {{ x }} / {{ y }} 
