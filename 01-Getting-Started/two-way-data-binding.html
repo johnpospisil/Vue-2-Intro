@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hello World</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Two-Way Data-Binding - Super Cooool!</h1>
+    <h3>The input below displays the string assigned to the Vue variable "name".</h3>
+    <h3>You can change the value of "name" by typing in the input field.</h3>
+    <input type="text" v-model="name">
+    <h3>Below, "name" is shown. Notice how it updates as the input field changes.</h3>
+    <p>{{ name }}</p>
+    <h2>That's two-way data binding!</h2>
+  </div>
+  <script src="two-way-data-binding.js"></script>
+</body>
+
+</html>
