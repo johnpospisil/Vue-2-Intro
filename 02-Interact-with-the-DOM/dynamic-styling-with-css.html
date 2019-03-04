@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Dynamic Styling</title>
+  <title>Dynamic Stylinga</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <link rel="stylesheet" type="text/css" media="screen" href="dynamic-styling-with-css.css">
@@ -12,7 +12,12 @@
 
 <body>
   <div id="app">
-    <div class="demo" @click="attachRed = !attachRed" :class="{red: attachRed}"></div>
+    <h1>Click the boxes</h1>
+    <div 
+      class="demo" 
+      @click="attachRed = !attachRed" 
+      :class="divClasses">
+    </div>
     <div class="demo"></div>
     <div class="demo"></div>
   </div>
