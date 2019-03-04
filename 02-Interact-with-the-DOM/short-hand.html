@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Short-hand</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Short-Hand</h1>
+    <h2>Use '@' instead of 'v-on:'</h2>
+    <!-- use '@' instead of 'v-on:' -->
+    <button @click="changeLink" target="_blank">Click to change link</button>
+    <!-- use ':' instead of 'v-bind:' -->
+    <a :href="link">Link</a>
+  </div>
+  <script src="short-hand.js"></script>
+</body>
+
+</html>
