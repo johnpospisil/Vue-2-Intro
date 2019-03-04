@@ -13,11 +13,8 @@
 <body>
   <div id="app">
     <h1>Click the boxes</h1>
-    <div 
-      class="demo" 
-      @click="attachRed = !attachRed" 
-      :class="divClasses">
-    </div>
+    <!-- This box color is toggled by clicking the box, which runs the 'divClasses' computed property -->
+    <div class="demo" :class="divClasses" @click="attachRed = !attachRed"></div>
     <div class="demo"></div>
     <div class="demo"></div>
   </div>
