@@ -12,11 +12,18 @@
 
 <body>
   <div id="app">
-    <h1>Click the boxes</h1>
+    <h2>Click the first box</h2>
     <!-- This box color is toggled by clicking the box, which runs the 'divClasses' computed property -->
     <div class="demo" :class="divClasses" @click="attachRed = !attachRed"></div>
-    <div class="demo"></div>
-    <div class="demo"></div>
+    <!-- Toggle between default box color and red -->
+    <div class="demo" :class="{red: attachRed}"></div>
+    <!-- toggle between default color and 'color' variable -->
+    <div class="demo" :class="color"></div>
+    <!-- toggle between the 'color' variable and the state of 'attachRed' -->
+    <div class="demo" :class="[color, {red: attachRed}]"></div>
+    <hr>
+    <p>Type 'red', 'blue', or 'green' to change the color of the third box:</p>
+    <input type="text" v-model="color">
   </div>
   <script src="dynamic-styling-with-css.js"></script>
 </body>
