@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dynamic Stylinga</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="dynamic-styling-with-css.css">
+</head>
+
+<body>
+  <div id="app">
+    <h2>H2 here</h2>
+
+    <div class="demo" :style="{backgroundColor: color}"></div>
+    <div class="demo" :style="myStyle"></div>
+    <div class="demo"></div>
+
+    <hr>
+    <p>Type any HTML color BY NAME to change the color of the first box. Change width in the second box:</p>
+    <input type="text" v-model="color">
+    <input type="text" v-model="width">
+  </div>
+  <script src="dynamic-styling-with-css.js"></script>
+</body>
+
+</html>
